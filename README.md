@@ -1,1 +1,1 @@
-# RAG_project
+# CM-project

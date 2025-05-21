@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+venv/
+
+# LangChain Vector DB
+db/faiss_index
+
+# VSCode
+.vscode/
+
+# DS_store
+.DS_Store
