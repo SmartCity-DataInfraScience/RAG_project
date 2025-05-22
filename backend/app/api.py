@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import List
 from app.rag_engine import query_rag
+import os, json
 
 router = APIRouter()
 
@@ -24,3 +25,4 @@ def chat(request: ChatRequest):
         return ChatResponse(answer=answer)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
