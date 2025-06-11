@@ -9,10 +9,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // ✅ 이미지 비율 유지하면서 전체 배경으로 넣기 (너무 확대되지 않게 조절)
+          
           SizedBox.expand(
             child: FittedBox(
-              fit: BoxFit.fitHeight, // 화면 높이에 맞추되 과도하게 확대되지 않음
+              fit: BoxFit.fitHeight, 
               alignment: Alignment.center,
               child: Image.asset(
                 'assets/crex_home_bg.png',

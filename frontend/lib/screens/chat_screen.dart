@@ -22,7 +22,7 @@ class _ChatScreenState extends State<ChatScreen> {
       _messages.add({"role": "user", "text": question});
     });
 
-    final url = Uri.parse('http://172.24.243.61:8000/chat');
+    final url = Uri.parse('http://172.24.245.112:8000/chat');
     try {
       final response = await http.post(
         url,
@@ -71,7 +71,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> clearChat() async {
     try {
       await http.post(
-        Uri.parse('http://172.24.243.61:8000/clear_chat'),
+        Uri.parse('http://172.24.245.112:8000/clear_chat'),
         headers: {'Content-Type': 'application/json'},
         body: json.encode({"session_id": "user1"}),
       );
